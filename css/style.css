@@ -139,6 +139,7 @@ text-align: centre;
 figure.image {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
+    border-radius: 20px;
   position: relative;
   float: left;
 overflow: hidden;
@@ -148,6 +149,7 @@ overflow: hidden;
   max-height: 220px;
   width: 100%;
   background: #000000;
+     border-radius: 20px;
   text-align: center;
 }
 figure.image * {
@@ -181,6 +183,7 @@ figure.image figcaption::before {
   height: 2px;
   content: '';
   opacity: 0;
+     border-radius: 20px;
   background-color: rgba(255, 255, 255, 0);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -201,10 +204,12 @@ figure.image p {
 }
 figure.image h2 {
   display: inline-block;
+     border-radius: 20px;
   word-spacing: -0.1em;
   font-weight: 300;
   text-transform: uppercase;
   bottom: 0;
+     border-radius: 20px;
   background: rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(0%, 50%, 0);
   transform: translate3d(0%, 50%, 0);
@@ -219,6 +224,7 @@ figure.image p {
   top: 0%;
   color: #000;
   background: #fff;
+     border-radius: 20px;
   -webkit-transform: translate3d(0%, -50%, 0);
   transform: translate3d(0%, -50%, 0);
   -webkit-transition-delay: 0s;
@@ -230,7 +236,7 @@ figure.image a {
   top: 0;
   bottom: 0;
   position: absolute;
-  color: #ffffff;
+  color: #FB8A61;
 }
 figure.image:hover img {
   opacity: 0.7;
@@ -250,6 +256,7 @@ figure.image:hover figcaption p {
 }
 figure.image:hover figcaption::before {
   background: #ffffff;
+    
   left: 0px;
   right: 0px;
   opacity: 1;
