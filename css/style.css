@@ -136,63 +136,125 @@ text-align: centre;
     opacity: 0.4em; 
 }
 
-
-.container {
-  clear: both;
-  margin: 0 auto;
-  max-width: 1050px;
-}
-
-.image {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  margin: 5px;
+figure.image {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
   float: left;
-  position: relative;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-}
-.image p {
-  opacity: 0;
-  transition: .2s;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
+overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
   text-align: center;
-  line-height: 200px;
 }
-.image:after, .image:before {
-  opacity: 0;
-  transition: .2s;
-  content: "";
-  background-image: inherit;
-  background-size: inherit;
-  background-position: inherit;
+figure.image * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.image img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.image figcaption {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-filter: blur(90px) saturate(4);
-  filter: blur(90px) saturate(4);
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .image:after, .image:before {
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+figure.image figcaption > div {
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
-.image:hover p, .image:hover:after, .image:hover:before {
+figure.image figcaption::before {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  height: 2px;
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.image h2,
+figure.image p {
+  margin: 0;
+  padding: 30px 35px;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s,-webkit-transform 0.4s,-moz-transform 0.4s,-o-transform 0.4s,transform 0.4s;
+}
+figure.image h2 {
+  display: inline-block;
+  word-spacing: -0.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(0%, 50%, 0);
+  transform: translate3d(0%, 50%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.image h2 span {
+  font-weight: 800;
+}
+figure.image p {
+  font-weight: 300;
+  top: 0%;
+  color: #000;
+  background: #fff;
+  -webkit-transform: translate3d(0%, -50%, 0);
+  transform: translate3d(0%, -50%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.image a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+figure.image:hover img {
+  opacity: 0.7;
+}
+figure.image:hover figcaption h2,
+figure.image:hover figcaption p {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.image:hover figcaption h2 {
   opacity: 1;
 }
-
-.hover .image p, .hover .image:after, .hover .image:before {
+figure.image:hover figcaption p {
   opacity: 1;
+}
+figure.image:hover figcaption::before {
+  background: #ffffff;
+  left: 0px;
+  right: 0px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 ////////////NAV/////////////
