@@ -64,6 +64,25 @@ text-align: center;
 	text-align: center;
 }
 
+.sectionNine {
+	height: 155vh;	
+	background-color: #0C022F;
+	text-align: center;
+}
+
+.sectionTen {
+	height: 80vh;	
+	background-color: #FB8A61;
+	text-align: center;
+}
+
+.sectionEleven {
+height: 110vh;	
+background-color: #0C022F;
+text-align: center;
+
+}
+
 .sectionEight {
 	height: 13vh;	
 	background-color: #0C022F ;
@@ -226,8 +245,6 @@ body {
 
 p {
   color: $white;
-  font-size: 12px;
-  
   @media(min-width: 600px) {
     left: 50%;
     position: absolute; 
@@ -318,7 +335,7 @@ p {
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 figure.snip0014 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Mandali', sans-serif;
   color: #fff;
   position: relative;
   float: left;
