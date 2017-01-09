@@ -1,6 +1,6 @@
 
 
-section { padding: 5px; }
+section { padding: 1px; }
 
 .sectionOne {
 height: 100vh;	
@@ -14,14 +14,11 @@ text-align: center;
 }
 
 .sectionTwo {
-height: 100vh;	
+height: 60vh;	
 background-color: #0C022F;
 text-align: center;
 
 }
-
-.aboutme {width: 35vw; float: left;}
-.me {width:50vw; float:right;}
 
 .sketches1 {width50vw;
 }
@@ -159,9 +156,15 @@ font-family: 'Mandali', sans-serif;
     opacity: 0.4em; 
 }
 
-
-
-nav ul li { display: inline-block;}
+nav { text-align: center; 
+    padding: 0em;
+    
+}
+nav ul li { display: inline-block; }
+.nav_item {
+	padding: 10px 30px;
+	display: inline-block;
+}
 
 nav {
     
@@ -178,6 +181,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    top:0;
+    width: 100%
 }
 
 
@@ -185,9 +190,11 @@ li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 25px;
     text-decoration: none;
+
 }
+
 
 li a:hover {
     color:#0C022F; 
