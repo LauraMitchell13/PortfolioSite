@@ -121,7 +121,9 @@ p, nav {
 font-family: 'Mandali', sans-serif;
 }
 
-img { 
+.monogram {
+    float: right;
+    padding-right: 25em;
     width: 40%;
     height:40%;
     opacity: 1.0;
