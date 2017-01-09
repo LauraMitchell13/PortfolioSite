@@ -118,27 +118,15 @@ font-family: 'Poiret One', cursive;
 }
 
 p, nav { 
-font-family: 'Mandali', sans-serif;}
-
-
-
-.monogram {
-    position: absolute;
-    left: 0;
-    top: 30%;
-    width: 30%;
-    text-align: center;
-    font-size: 18px;
+font-family: 'Mandali', sans-serif;
 }
 
-.background {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
+img { 
+    width: 40%;
+    height:40%;
+    opacity: 1.0;
 }
+
 
 .social {
   
