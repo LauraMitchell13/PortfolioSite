@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+body {
+
+    width: 80%;
+
+    max-width: 650px;
+
+        min-height: 320px;
+
+        font-size: 100%;
+
+        font-family: 'Cormorant Garamond', serif;
+
+        margin: auto;
+    color:black;
+line-height: 1.8em;
+    background-image: url(../images/applebackround.png);}
+
+article { 
+    background: rgba(255, 255, 255, 0.9);
+    width: 110%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    box-decoration-break: 6px 4px 4px #888888;
+    margin-top: 1em;
+    }
+
+h1 {
+
+
+    font-size: 9em;
+    float: right;
+    margin-bottom: 1em;
+   font-family: 'Cormorant Garamond', serif;
+    color:black;
+    text-align: center;
+}
+
+hr{width: 90%;
+    padding-left: 5em;
+}
+
+p {
+    
+    font-weight: normal;
+    font-size: 1.7em;
+    text-align:center;
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+    font-family: 'Cormorant Garamond', serif;
+    color: darkcyan;
+}
+
+img {
+    width: 10%;
+    padding-left: 20em;
+}
+
