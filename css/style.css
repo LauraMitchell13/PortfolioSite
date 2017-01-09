@@ -35,6 +35,9 @@ text-align: center;
 .sectionFour {
 	height: 40vh;	
 	background-color: #0C022F ;
+     background-image: url(../images/background2.svg);
+    width: 100%;
+    background-repeat: repeat-x;
 	text-align: center;
     width: 100%;
 }
@@ -59,6 +62,13 @@ text-align: center;
 	height: 100vh;	
 	background-color: #FB8A61;
 	text-align: center;
+}
+
+.sectionEight {
+	height: 13vh;	
+	background-color: #0C022F ;
+	text-align: center;
+    width: 100%;
 }
 
 
@@ -107,6 +117,7 @@ font-family: 'Mandali', sans-serif;}
 }
 
 .social {
+  
     position: relative;
     margin: auto 0;
 }
@@ -123,8 +134,8 @@ font-family: 'Mandali', sans-serif;}
 }
 
 .social img {
-    width: 38px;
-    text-align: center;
+    width: 60px;
+    align-items: center;
     border: none;
 }
 
@@ -264,8 +275,14 @@ figure.image:hover figcaption::before {
   transition-delay: 0s;
 }
 
+nav ul li { display: inline-block;}
 
-nav {background-color: #FB8A61;
+nav {
+    
+    padding-top: 0.2em;
+    margin-top: 0.5em;
+    float: left;
+    background-color: #FB8A61;
 width: 100%;
     
 }
@@ -276,12 +293,10 @@ ul {
     padding: 0;
     overflow: hidden;
 }
-li {
-    float: left;
-}
+
 
 li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
